@@ -1,0 +1,77 @@
+/* --------- Populaires --------- */
+
+.populaires {
+	width: 32%;
+}
+
+.populaires-title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.populaires-cards .card {
+    margin-top: 33px;
+	display: flex;	
+}
+
+.populaires-cards img {
+	width: 33%;
+	height: 136px;
+
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.populaires-cards .card-content {
+    padding-left: 15px;
+
+	width: 67%;
+	box-sizing: border-box;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;	
+}
+
+.populaires-cards .card-title {
+	margin-top: 10px;
+	margin-bottom: 4px;
+}
+
+.populaires-cards .card-rating {
+	margin-bottom: 5px;
+}
+
+/* --------- Responsive --------- */
+
+/* Medium devices (tablets, less/equal than 1024px) */
+@media (max-width: 1024px) {
+	.populaires {
+		width: 100%;
+		margin-top: 50px;
+	}
+
+	.populaires-cards {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.populaires-cards a {
+		width: 30%;
+	}
+
+	.populaires-cards .card-title {
+		font-size: 14px;
+	}
+
+	.populaires-cards .card-subtitle {
+		font-size: 13px;
+	}
+}
+
+/* Small devices (phones, less than 768px) */
+@media (max-width: 767.98px) {
+	/* ... */
+}

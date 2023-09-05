@@ -1,0 +1,18 @@
+/* --------- Cards --------- */
+
+.card {
+	padding: 5px;
+	
+	background-color: white;
+	filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+
+	border-radius: 20px;
+}
+
+.card-title {
+	font-size: 16px;
+}
+
+.card img {
+	object-fit: cover;
+}
