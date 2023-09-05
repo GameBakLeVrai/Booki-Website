@@ -1,0 +1,65 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav img {
+    padding: 30px 50px;
+
+    width: 60px;
+    height: 19px;
+}
+
+.encre-container {
+    display: flex;
+    gap: 15px;
+}
+
+.encre-container a {
+    padding-top: 15px;
+
+    font-size: 16px;
+    font-weight: 400;
+
+    color: var(--text-color);
+}
+
+.encre-container a.active,
+.encre-container a:hover {
+    border-top: 2px solid var(--main-color);
+    color: var(--main-color);
+    transition: border-top-color 0.1s ease-in-out;
+}
+
+/* --------- Responsive --------- */
+
+/* Small devices (phones, less than 768px) */
+@media screen and (max-width: 768px) {
+	nav {
+        flex-direction: column;
+    }
+
+    nav img {
+        margin: 0 auto;
+    }
+
+    .encre-container {
+        gap: 0;
+    }
+
+    .encre-container a {
+        width: 100%;
+        text-align: center;
+
+        padding-top: 0;
+        padding-bottom: 15px;
+
+        border-bottom: 2px solid var(--main-bg-color);
+    }
+
+    .encre-container a.active,
+    .encre-container a:hover {
+        border-top: none;
+        border-bottom: 2px solid var(--main-color);
+    }
+}
