@@ -4,7 +4,7 @@ nav {
 }
 
 nav img {
-    padding: 30px 50px;
+    padding: 30px 0;
 
     width: 60px;
     height: 19px;
@@ -21,12 +21,13 @@ nav img {
     font-size: 16px;
     font-weight: 400;
 
+    border-top: 2px solid transparent;
     color: var(--text-color);
 }
 
 .encre__container a.active,
 .encre__container a:hover {
-    border-top: 2px solid var(--main-color);
+    border-top-color: var(--main-color);
     color: var(--main-color);
     transition: border-top-color 0.1s ease-in-out;
 }
@@ -54,12 +55,13 @@ nav img {
         padding-top: 0;
         padding-bottom: 15px;
 
+        border-top: unset;
         border-bottom: 2px solid var(--main-bg-color);
     }
 
     .encre__container a.active,
     .encre__container a:hover {
-        border-top: none;
+        border-top-color: unset;
         border-bottom: 2px solid var(--main-color);
     }
 }
