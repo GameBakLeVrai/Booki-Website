@@ -19,24 +19,20 @@
 	width: 33%;
 	height: 136px;
 
+    border: 5px solid white;
+    border-right: none;
+
 	border-top-left-radius: 20px;
 	border-bottom-left-radius: 20px;
 }
 
 .populaires-cards .card-content {
     padding-left: 15px;
-
 	width: 67%;
-	box-sizing: border-box;
 
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;	
-}
-
-.populaires-cards .card-title {
-	margin-top: 10px;
-	margin-bottom: 4px;
 }
 
 .populaires-cards .card-rating {
@@ -49,7 +45,6 @@
 @media (max-width: 1024px) {
 	.populaires {
 		width: 100%;
-		margin-top: 50px;
 	}
 
 	.populaires-cards {
@@ -72,5 +67,15 @@
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-	/* ... */
+    .populaires-cards {
+        flex-direction: column;
+    }
+    
+    .populaires-cards .card {
+        margin-top: 15px;
+    }
+
+	.populaires-cards a  {
+        width: unset;
+    }
 }

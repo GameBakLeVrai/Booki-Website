@@ -31,7 +31,7 @@ header form > i:first-child {
 
 header form input[type="text"] {
     padding: 0 20px;
-    width: 150px;
+    width: 200px;
 
     font-size: 18px;
     font-weight: 700;
@@ -90,6 +90,8 @@ header form button > i {
 
     border: 2px solid var(--main-bg-color-secondary);
     border-radius: 25px;
+
+    box-sizing: unset;
 }
 
 .header-filters__items > div > p {    
@@ -142,6 +144,14 @@ header form button > i {
 }
 
 @media screen and (max-width: 768px) {
+    header {
+        padding: 0px 20px;
+    }
+
+    header form {
+        max-width: unset;
+    }
+
     header form button {
         border-radius: 15px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -153,5 +163,9 @@ header form button > i {
     
 	header form button > i {
         display: initial !important;
-    } 
+    }
+
+    header form input[type="text"] {
+        width: 100%;
+    }
 }

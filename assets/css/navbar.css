@@ -8,6 +8,8 @@ nav img {
 
     width: 60px;
     height: 19px;
+
+    box-sizing: unset;
 }
 
 .encre__container {
