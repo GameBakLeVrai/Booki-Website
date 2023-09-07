@@ -1,37 +1,37 @@
 nav {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	justify-content: space-between;
 }
 
 nav img {
-    padding: 30px 0;
+	padding: 30px 0;
 
-    width: 60px;
-    height: 19px;
+	width: 60px;
+	height: 19px;
 
-    box-sizing: unset;
+	box-sizing: unset;
 }
 
 .encre-container {
-    display: flex;
-    gap: 15px;
+	display: flex;
+	gap: 15px;
 }
 
 .encre-container a {
-    padding-top: 15px;
+	padding-top: 15px;
 
-    font-size: 16px;
-    font-weight: 400;
+	font-size: 16px;
+	font-weight: 400;
 
-    border-top: 2px solid transparent;
-    color: var(--text-color);
+	border-top: 2px solid transparent;
+	color: var(--text-color);
 }
 
 .encre-container a.active,
 .encre-container a:hover {
-    border-top-color: var(--main-color);
-    color: var(--main-color);
-    transition: border-top-color 0.1s ease-in-out;
+	border-top-color: var(--main-color);
+	color: var(--main-color);
+	transition: border-top-color 0.1s ease-in-out;
 }
 
 /* --------- Responsive --------- */
@@ -39,31 +39,31 @@ nav img {
 /* Small devices (phones, less than 768px) */
 @media screen and (max-width: 768px) {
 	nav {
-        flex-direction: column;
-    }
+		flex-direction: column;
+	}
 
-    nav img {
-        margin: 0 auto;
-    }
+	nav img {
+		margin: 0 auto;
+	}
 
-    .encre-container {
-        gap: 0;
-    }
+	.encre-container {
+		gap: 0;
+	}
 
-    .encre-container a {
-        width: 100%;
-        text-align: center;
+	.encre-container a {
+		width: 100%;
+		text-align: center;
 
-        padding-top: 0;
-        padding-bottom: 15px;
+		padding-top: 0;
+		padding-bottom: 15px;
 
-        border-top: unset;
-        border-bottom: 2px solid var(--main-bg-color);
-    }
+		border-top: unset;
+		border-bottom: 2px solid var(--main-bg-color);
+	}
 
-    .encre-container a.active,
-    .encre-container a:hover {
-        border-top-color: unset;
-        border-bottom: 2px solid var(--main-color);
-    }
+	.encre-container a.active,
+	.encre-container a:hover {
+		border-top-color: unset;
+		border-bottom: 2px solid var(--main-color);
+	}
 }
