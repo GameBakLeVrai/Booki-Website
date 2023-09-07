@@ -12,12 +12,12 @@ nav img {
     box-sizing: unset;
 }
 
-.encre__container {
+.encre-container {
     display: flex;
     gap: 15px;
 }
 
-.encre__container a {
+.encre-container a {
     padding-top: 15px;
 
     font-size: 16px;
@@ -27,8 +27,8 @@ nav img {
     color: var(--text-color);
 }
 
-.encre__container a.active,
-.encre__container a:hover {
+.encre-container a.active,
+.encre-container a:hover {
     border-top-color: var(--main-color);
     color: var(--main-color);
     transition: border-top-color 0.1s ease-in-out;
@@ -46,11 +46,11 @@ nav img {
         margin: 0 auto;
     }
 
-    .encre__container {
+    .encre-container {
         gap: 0;
     }
 
-    .encre__container a {
+    .encre-container a {
         width: 100%;
         text-align: center;
 
@@ -61,8 +61,8 @@ nav img {
         border-bottom: 2px solid var(--main-bg-color);
     }
 
-    .encre__container a.active,
-    .encre__container a:hover {
+    .encre-container a.active,
+    .encre-container a:hover {
         border-top-color: unset;
         border-bottom: 2px solid var(--main-color);
     }
