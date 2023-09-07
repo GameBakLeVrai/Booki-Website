@@ -8,7 +8,7 @@
     <title>Booki</title>
 
     <!-- CSS Imports -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
     
     <link rel="stylesheet" href="/assets/css/global.css">
     <link rel="stylesheet" href="/assets/css/cards.css">
@@ -19,12 +19,13 @@
 
     <link rel="stylesheet" href="/assets/css/hebergements.css">
     <link rel="stylesheet" href="/assets/css/populaires.css">
+    <link rel="stylesheet" href="/assets/css/activites.css">
 </head>
 
 <body>
     <div class="main-container">
         <nav>
-            <img src="/assets/images/logo/Booki.png" alt="Logo" />
+            <img src="/assets/images/logo/Booki.png" alt="Logo">
 
             <div class="encre__container">
                 <a href="#hebergements" class="active">Hébergements</a>
@@ -40,7 +41,7 @@
 
             <form method="post" action="">
                 <i class="fa-solid fa-location-dot"></i>
-                <input type="text" name="search" placeholder="Marseille, France" />
+                <input type="text" name="search" placeholder="Marseille, France">
                 
                 <button>
                     <i class="fa-solid fa-magnifying-glass"></i>
@@ -215,7 +216,7 @@
                         </a>
                     </div>
 
-                    <input type="button" value="Afficher plus" />
+                    <input type="button" value="Afficher plus">
                 </section>
 
                 <section class="populaires">
@@ -297,7 +298,51 @@
                 </section>
             </div>
 
-            <div id="activites"></div>
+            <section class="activites-container" id="activites">
+                <h2 class="section-title">Activités à Marseille</h2>
+
+                <div class="activites-cards">
+                    <a href="#">
+                        <article class="card">
+                            <img src="/assets/images/activites/reno-laithienne.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+
+                            <div class="card-content">
+                                <h3 class="card-title">Vieux-Port</h3>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="#">
+                        <article class="card">
+                            <img src="/assets/images/activites/paul-hermann.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+
+                            <div class="card-content">
+                                <h3 class="card-title">Fort de Pomègues</h3>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="#">
+                        <article class="card">
+                            <img src="/assets/images/activites/kilyan-sockalingum.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+
+                            <div class="card-content">
+                                <h3 class="card-title">Parc national des Calanques</h3>
+                            </div>
+                        </article>
+                    </a>
+
+                    <a href="#">
+                        <article class="card">
+                            <img src="/assets/images/activites/florian-wehde.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+
+                            <div class="card-content">
+                                <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+            </section>
         </main>
 
         <footer>
