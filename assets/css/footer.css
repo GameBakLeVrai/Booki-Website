@@ -1,0 +1,24 @@
+footer {
+	padding: 20px;
+
+	display: flex;
+	justify-content: space-between;
+
+	background: var(--main-bg-color);
+}
+
+.footer__container {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+/* --------- Responsive --------- */
+
+/* Small devices (phones, less than 768px) */
+@media screen and (max-width: 768px) {
+	footer {
+		flex-direction: column;
+		gap: 50px;
+	}
+}
